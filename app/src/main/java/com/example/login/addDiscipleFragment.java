@@ -73,6 +73,7 @@ public class addDiscipleFragment extends Fragment {
     Button btnSubmit;
     EditText edittxtName;
     ImageView qrImage;
+    String fullName;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -98,6 +99,8 @@ public class addDiscipleFragment extends Fragment {
                     } catch (WriterException e) {
                         throw new RuntimeException(e);
                     }
+                }else{
+                    qrImage.setImageBitmap(null);
                 }
             }
         });
