@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "239855044921",
+    "project_id": "filegroup-lighthouse-firebase",
+    "storage_bucket": "filegroup-lighthouse-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239855044921:android:0b5baa7adee742207500e8",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1-VtYuNFayVNnEdc-9h-stXBNstyOfbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

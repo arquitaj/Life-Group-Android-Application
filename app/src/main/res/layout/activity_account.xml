@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D7DC"
+    tools:context=".Account">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D9D7DC"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+<!--
+        <LinearLayout
+            android:id="@+id/screenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/areaFragments"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                app:tint="@color/icon_color"
+                app:srcCompat="@drawable/home_icon" />
+
+            <ImageView
+                android:id="@+id/add_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                app:srcCompat="@drawable/user_icon" />
+
+            <ImageView
+                android:id="@+id/attendance_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                app:srcCompat="@drawable/attendance_icon" />
+
+            <ImageView
+                android:id="@+id/account_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_50sdp"
+                app:srcCompat="@drawable/account_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/label_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Add Member" />
+
+            <TextView
+                android:id="@+id/txtAttendance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Attendance" />
+
+            <TextView
+                android:id="@+id/txtAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Account" />
+
+        </LinearLayout>
+    <!--    </LinearLayout> -->
+    </androidx.cardview.widget.CardView>
+
+
+    <!--This part is for Add Member Icon -->
+<!--
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:padding="@dimen/_28sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp"
+            android:background="@drawable/roundstyle">
+
+            <TextView
+                android:id="@+id/txtAddNewDesciple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="ADD NEW DISCIPLE"
+                android:textColor="@color/new_color"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edittxtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#7C7979" />
+
+            <EditText
+                android:id="@+id/editTxtBDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:ems="10"
+                android:hint="Birth Date"
+                android:inputType="date"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#7C7979" />
+
+            <EditText
+                android:id="@+id/editTxtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:hint="Address"
+                android:inputType="text"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#7C7979" />
+
+            <EditText
+                android:id="@+id/editTxtLeadersName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:hint="Life Group Leader's Name"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#7C7979" />
+
+            <EditText
+                android:id="@+id/editTxtNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:hint="Network"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#7C7979" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_70sdp"
+                android:text="Submit"
+                android:layout_marginBottom="@dimen/_20sdp"/>
+
+        </LinearLayout>
+    </ScrollView>
+-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterInterface"
+    android:padding="@dimen/_50sdp"
+    >
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:text="CREATE NEW ACCOUNT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/new_color"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textAllCaps="true"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#7C7979" />
+
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#7C7979" />
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#7C7979" />
+
+   <RadioGroup
+       android:id="@+id/radioSex"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="@dimen/_10sdp"
+       android:orientation="horizontal">
+
+
+       <RadioButton
+           android:id="@+id/radioMale"
+           android:layout_width="@dimen/_120sdp"
+           android:layout_height="wrap_content"
+           android:text="Male"
+           android:textColor="#0B0A0A"
+           android:textColorHint="#7C7979" />
+
+       <RadioButton
+           android:id="@+id/radioFemale"
+           android:layout_width="@dimen/_120sdp"
+           android:layout_height="match_parent"
+           android:text="Female"
+           android:textColor="#0B0A0A"
+           android:textColorHint="#7C7979" />
+   </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTxtLGName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:ems="10"
+        android:hint="Life Group Name"
+        android:inputType="text"
+        android:textAllCaps="true"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#7C7979" />
+    <ProgressBar
+        android:id="@+id/progressSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_30sdp"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:onClick="onClickSubmit"
+        android:text="Create Account" />
+
+-->
+</LinearLayout>
